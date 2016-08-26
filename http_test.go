@@ -215,7 +215,7 @@ func TestRoman99(t *T) {
         t.Fatalf("wrong code returned: %d", w.Code)
     }
     body := w.Body.String()
-    if body != fmt.Sprintf("Here's your number: MCIX\n") {
+    if body != fmt.Sprintf("Here's your number: XCIX\n") {
         t.Fatalf("wrong body returned: %s", body)
     }
 
