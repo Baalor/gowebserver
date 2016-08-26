@@ -13,6 +13,9 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func to_roman(n int)  string { 
+    if n == 0 {
+	return "NIL"
+    }
     result := ""
     for n >= 1000 {
 	n = n-1000
