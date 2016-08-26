@@ -13,9 +13,10 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func to_roman(n int)  string { 
-    result := "M"
-    if n >= 1000 {
-	return result
+    result := ""
+    while (n >= 1000) {
+	n = n-1000
+	result += "M"
     }   
     if n == 2 {
         return "II"
@@ -23,7 +24,7 @@ func to_roman(n int)  string {
     if n == 3 {
         return "III"
     }
-    return "I"
+    return result
 }
 
 type romanGenerator int
