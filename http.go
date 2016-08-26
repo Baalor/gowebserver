@@ -13,17 +13,60 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func to_roman(n int)  string { 
-    result := "M"
-    if n >= 1000 {
-	return result
+    result := ""
+    for n >= 1000 {
+	n = n-1000
+	result += "M"
+    }
+    for n >= 900 {
+	n = n-900
+	result += "CM"
+    }
+    for n >= 500 {
+	n = n-500
+	result += "D"
+    }
+    for n >= 400 {
+	n = n-400
+	result += "CD"
+    }
+    for n >= 100 {
+	n = n-100
+	result += "C"
+    }
+    for n >= 90 {
+	n = n-90
+	result += "XC"
+    }
+    for n >= 50 {
+	n = n-50
+	result += "L"
+    }
+    for n >= 40 {
+	n = n-40
+	result += "XL"
+    }
+    for n >= 10 {
+	n = n-10
+	result += "X"
+    }
+    for n >= 9 {
+	n = n-9
+	result += "IX"
+    }
+    for n >= 5 {
+	n = n-5
+	result += "V"
+    }
+    for n >= 4 {
+	n = n-4
+	result += "IV"
+    }
+    for n >= 1 {
+	n = n-1
+	result += "I"
     }   
-    if n == 2 {
-        return "II"
-    }
-    if n == 3 {
-        return "III"
-    }
-    return "I"
+    return result
 }
 
 type romanGenerator int
