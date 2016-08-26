@@ -56,5 +56,182 @@ func TestRomanTwo(t *T) {
     if body != fmt.Sprintf("Here's your number: II\n") {
         t.Fatalf("wrong body returned: %s", body)
     }
+}
+
+func TestRoman3(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/3", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: III\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman4(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/4", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: IV\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman5(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/5", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: V\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman6(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/6", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: VI\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman21(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/21", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: XXI\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+func TestRoman50(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/50", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: L\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman500(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/500", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: D\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman2000(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/2000", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: MM\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman1990(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/1990", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: MCMXC\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+func TestRoman2008(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/2008", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: MMVIII\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman99(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/99", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: MCIX\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
+
+}
+
+func TestRoman47(t *T) {
+    n := romanGenerator(3)
+    r, _ := http.NewRequest("GET", "/roman/47", nil)
+    w := httptest.NewRecorder()
+    n.ServeHTTP(w, r)
+    if w.Code != 200 {
+        t.Fatalf("wrong code returned: %d", w.Code)
+    }
+    body := w.Body.String()
+    if body != fmt.Sprintf("Here's your number: XLVII\n") {
+        t.Fatalf("wrong body returned: %s", body)
+    }
 
 }
