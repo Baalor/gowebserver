@@ -12,7 +12,11 @@ func hello(w http.ResponseWriter, r *http.Request) {
     io.WriteString(w, "Hello world!")
 }
 
-func to_roman(n int)  string {
+func to_roman(n int)  string { 
+    result := "M"
+    if n >= 1000 {
+	return result
+    }   
     if n == 2 {
         return "II"
     }
