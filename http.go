@@ -14,7 +14,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 
 func to_roman(n int)  string { 
     result := ""
-    while (n >= 1000) {
+    while n >= 1000 {
 	n = n-1000
 	result += "M"
     }   
