@@ -236,6 +236,13 @@ func TestRoman47(t *T) {
 
 }
 
+func TestRoman47unit(t *T) {
+    n := to_roman(1)
+    if n != "I" {
+        t.Fatalf("wrong code returned: %d", 0)
+    }
+}
+
 
 func TestRoman0(t *T) {
     n := romanGenerator(1)
@@ -249,5 +256,4 @@ func TestRoman0(t *T) {
     if body != fmt.Sprintf("Here's your number: NIL\n") {
         t.Fatalf("wrong body returned: %s", body)
     }
-
 }
