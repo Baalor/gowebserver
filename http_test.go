@@ -59,7 +59,7 @@ func TestRomanTwo(t *T) {
 }
 
 func TestRoman3(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/3", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -74,7 +74,7 @@ func TestRoman3(t *T) {
 }
 
 func TestRoman4(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/4", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -89,7 +89,7 @@ func TestRoman4(t *T) {
 }
 
 func TestRoman5(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/5", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -104,7 +104,7 @@ func TestRoman5(t *T) {
 }
 
 func TestRoman6(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/6", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -119,7 +119,7 @@ func TestRoman6(t *T) {
 }
 
 func TestRoman21(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/21", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -133,7 +133,7 @@ func TestRoman21(t *T) {
 
 }
 func TestRoman50(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/50", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -148,7 +148,7 @@ func TestRoman50(t *T) {
 }
 
 func TestRoman500(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/500", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -163,7 +163,7 @@ func TestRoman500(t *T) {
 }
 
 func TestRoman2000(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/2000", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -178,7 +178,7 @@ func TestRoman2000(t *T) {
 }
 
 func TestRoman1990(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/1990", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -192,7 +192,7 @@ func TestRoman1990(t *T) {
 
 }
 func TestRoman2008(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/2008", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -207,7 +207,7 @@ func TestRoman2008(t *T) {
 }
 
 func TestRoman99(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/99", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
@@ -222,7 +222,7 @@ func TestRoman99(t *T) {
 }
 
 func TestRoman47(t *T) {
-    n := romanGenerator(3)
+    n := romanGenerator(1)
     r, _ := http.NewRequest("GET", "/roman/47", nil)
     w := httptest.NewRecorder()
     n.ServeHTTP(w, r)
